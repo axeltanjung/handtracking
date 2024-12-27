@@ -3,7 +3,7 @@ import mediapipe as mp
 import time
 
 class HandDetector():
-    def __init__(self, mode, maxHands=2, detectionCon=0.5, trackCon=0.5):
+    def __init__(self, mode=False, maxHands=2, detectionCon=0.5, trackCon=0.5):
         self.mode = mode
         self.maxHands = maxHands
         self.detectionCon = detectionCon
@@ -43,7 +43,12 @@ class HandDetector():
 def main():
     pTime = 0
     cTime = 0
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(-1)
+    if not cap.isOpened():
+        print("Error: Cannot access the camera.")
+    else:
+        print("Camera is working.")
+    cap.release()
     detector = HandDetector()
     while True:
         success, img = cap.read()
