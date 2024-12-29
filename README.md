@@ -18,7 +18,7 @@ This project demonstrates hand tracking using a camera and OpenCV. The applicati
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/handtracking.git
+    git clone https://github.com/axeltanjung/handtracking.git
     cd handtracking
     ```
 
