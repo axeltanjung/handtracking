@@ -1,4 +1,4 @@
-# Hand Tracking Camera using OpenCVs
+# Hand Tracking Camera using OpenCV
 This project demonstrates hand tracking using a camera and OpenCV. The application captures video from a webcam and uses computer vision techniques to detect and track hands in real-time.
 
 ## Features
